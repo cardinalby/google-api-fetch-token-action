@@ -53,3 +53,9 @@ jobs:
           clientSecret: ${{ secrets.G_API_CLIENT_SECRET }}
           refreshToken: ${{ secrets.G_API_REFRESH_TOKEN }}
 ```
+
+## See also
+
+If you are developing WebExtension for Google Web Store, take a look at
+[webext-buildtools-chrome-webstore-action](https://github.com/cardinalby/webext-buildtools-chrome-webstore-action)
+to upload and publish your extension. It works nice together with this action utilizing the same refresh token.
