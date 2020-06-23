@@ -1,0 +1,21 @@
+name: 'google-api-fetch-token-action'
+description: 'Fetch access token from Google API'
+author: 'cardinalby'
+inputs:
+  clientId:
+    description: 'Google API Client Id (use secrets!)'
+    required: true
+  clientSecret:
+    description: 'Google API Client Secret (use secrets!)'
+    required: true
+  refreshToken:
+    description: 'Google API Refresh Token (use secrets!)'
+    required: true
+outputs:
+  accessToken:
+    description: 'Fetched access token'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+branding:
+  icon: 'lock'
