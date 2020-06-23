@@ -1214,7 +1214,18 @@ function run() {
 function runImpl() {
     return __awaiter(this, void 0, void 0, function* () {
         ghActions.info('Fetching access token...');
-        const token = yield webstoreApi.fetchToken(actionInputs_1.actionInputs.clientId, actionInputs_1.actionInputs.clientSecret, actionInputs_1.actionInputs.refreshToken);
+        let token = undefined;
+        try {
+            token = yield webstoreApi.fetchToken(actionInputs_1.actionInputs.clientId, actionInputs_1.actionInputs.clientSecret, actionInputs_1.actionInputs.refreshToken);
+        }
+        catch (error) {
+            let message = error.message;
+            if (error.response && error.response.data) {
+                message += ': ' + JSON.stringify(error.response.data);
+            }
+            ghActions.error(message);
+            throw new Error(message);
+        }
         ghActions.setSecret(token);
         actionOutputs_1.actionOutputs.accessToken.setValue(token);
         ghActions.info('Success, passed to accessToken output');
