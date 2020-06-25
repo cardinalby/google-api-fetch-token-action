@@ -1,6 +1,6 @@
 ![Build Status](https://github.com/cardinalby/google-api-fetch-token-action/workflows/build-test/badge.svg)
 
-# The purpose
+# The purpose 
 
 The action fetches access token from Google API. 
 
