@@ -38,7 +38,7 @@ Create a separate workflow with scheduled job:
 name: "fetch-access-token"
 on:
   schedule:
-    - cron:  '* * * */1 *' # run every month
+    - cron:  '0 3 2 * *' # At 03:00 on day-of-month 2
 
 jobs:
   fetchToken:
