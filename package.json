@@ -30,7 +30,7 @@
   "author": "cardinalby",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.2.0",
+    "@actions/core": "^1.2.6",
     "github-actions-utils": "^1.0.5",
     "typed-chrome-webstore-api": "^0.3.7"
   },
