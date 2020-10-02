@@ -31,7 +31,7 @@
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.2.6",
-    "github-actions-utils": "^1.0.5",
+    "github-actions-utils": "^1.0.8",
     "typed-chrome-webstore-api": "^0.3.7"
   },
   "devDependencies": {
