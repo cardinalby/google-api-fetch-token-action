@@ -1,6 +1,6 @@
 {
   "name": "google-api-fetch-token-action",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "description": "Fetch access token from Google API",
   "main": "lib/main.js",
@@ -30,13 +30,13 @@
   "author": "cardinalby",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.2.6",
+    "@actions/core": "^1.6.0",
     "github-actions-utils": "^1.0.8",
-    "typed-chrome-webstore-api": "^0.3.7"
+    "typed-chrome-webstore-api": "^0.4.12"
   },
   "devDependencies": {
     "@types/node": "^12.7.12",
-    "@zeit/ncc": "^0.20.5",
-    "typescript": "^3.6.4"
+    "@zeit/ncc": "^0.22.3",
+    "typescript": "^3.9.10"
   }
 }
