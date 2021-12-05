@@ -2,7 +2,7 @@
 
 # The purpose 
 
-The action fetches access token from Google API. 
+The action fetches an access token from Google API. 
 
 It can be used to **prevent your Refresh Token from being expired**.
 
@@ -32,8 +32,8 @@ Don't forget to store these values in secrets!
 ## Outputs
 * `accessToken` fetched access token
 
-## Example usage()
-Create a separate workflow with scheduled job:
+## Usage example
+Create a separate workflow with a scheduled job:
 ```yaml
 name: "fetch-access-token"
 on:
@@ -59,3 +59,6 @@ jobs:
 If you are developing WebExtension for Google Web Store, take a look at
 [webext-buildtools-chrome-webstore-action](https://github.com/cardinalby/webext-buildtools-chrome-webstore-action)
 to upload and publish your extension. It works nice together with this action utilizing the same refresh token.
+
+If you are interested in the building the entire deployment workflow for WebExtension, 
+you can read this [article](https://dev.to/cardinalby/webextension-deployment-and-publishing-using-github-actions-522o).
