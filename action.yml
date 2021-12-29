@@ -15,7 +15,7 @@ outputs:
   accessToken:
     description: 'Fetched access token'
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'dist/index.js'
 branding:
   icon: 'lock'
