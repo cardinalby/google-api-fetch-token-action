@@ -1,6 +1,5 @@
 {
   "name": "google-api-fetch-token-action",
-  "version": "1.0.1",
   "private": false,
   "description": "Fetch access token from Google API",
   "main": "lib/main.js",
@@ -32,10 +31,10 @@
   "dependencies": {
     "@actions/core": "^1.6.0",
     "github-actions-utils": "^1.0.8",
-    "typed-chrome-webstore-api": "^0.4.12"
+    "typed-chrome-webstore-api": "^0.4.13"
   },
   "devDependencies": {
-    "@types/node": "^12.7.12",
+    "@types/node": "^16.11.19",
     "@vercel/ncc": "^0.33.1",
     "typescript": "^3.9.10"
   }
