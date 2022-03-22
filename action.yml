@@ -1,4 +1,4 @@
-name: 'google-api-fetch-token-action'
+name: 'Fetch Google API access token'
 description: 'Fetch access token from Google API'
 author: 'cardinalby'
 inputs:

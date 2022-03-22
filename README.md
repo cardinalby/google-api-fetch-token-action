@@ -58,4 +58,4 @@ If you are developing WebExtension for Google Web Store, take a look at
 to upload and publish your extension. It works nice together with this action utilizing the same refresh token.
 
 If you are interested in the building the entire deployment workflow for WebExtension, 
-you can read this [article](https://dev.to/cardinalby/webextension-deployment-and-publishing-using-github-actions-522o).
+you can read this [article](https://cardinalby.github.io/blog/post/github-actions/webext/1-introduction/).
