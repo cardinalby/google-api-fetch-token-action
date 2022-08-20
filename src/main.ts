@@ -8,7 +8,7 @@ async function run(): Promise<void> {
     try {
         await runImpl();
     } catch (error) {
-        ghActions.setFailed(error.message);
+        ghActions.setFailed(String(error));
     }
 }
 
@@ -22,9 +22,14 @@ async function runImpl() {
             actionInputs.refreshToken
         );
     } catch (error) {
-        let message = error.message;
-        if (error.response && error.response.data) {
-            message += ': ' + JSON.stringify(error.response.data);
+        let message;
+        if (error) {
+            message = (error as any).message;
+            if ((error as any).response && (error as any).response.data) {
+                message += ': ' + JSON.stringify((error as any).response.data);
+            }
+        } else {
+            message = String(error);
         }
         ghActions.error(message);
         throw new Error(message);

@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc",
     "pack": "ncc build",
-    "all": "npm run build && npm run pack"
+    "all": "npm run build && npm run pack",
+    "mergePushMasterToV1": "git fetch . master:v1 && git push origin v1"
   },
   "repository": {
     "type": "git",
@@ -29,13 +30,13 @@
   "author": "cardinalby",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.6.0",
+    "@actions/core": "^1.9.1",
     "github-actions-utils": "^1.0.8",
-    "typed-chrome-webstore-api": "^0.4.13"
+    "typed-chrome-webstore-api": "^0.4.14"
   },
   "devDependencies": {
-    "@types/node": "^16.11.19",
-    "@vercel/ncc": "^0.33.1",
-    "typescript": "^3.9.10"
+    "@types/node": "^16.11.51",
+    "@vercel/ncc": "^0.34.0",
+    "typescript": "^4.7.4"
   }
 }
